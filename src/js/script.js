@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // navbar fixed
 window.onscroll = function() {
-    const header = document.querySelector('header');
+    const header = document.getElementById('navbar-medium');
     const fixedNav = header.offsetTop;
 
     if (window.pageYOffset > fixedNav){
