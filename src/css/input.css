@@ -13,15 +13,15 @@
 
 .hamburger-active > span:nth-child(1) {
     /* rotate: 41deg; */
-    @apply rotate-45
+    @apply w-[29px] rotate-45 bg-primary;
 }
 
 .hamburger-active > span:nth-child(2) {
-    @apply scale-0;
+    @apply scale-0 bg-primary;
 }
 
 .hamburger-active > span:nth-child(3) {
-    @apply -rotate-45
+    @apply w-[29px] -rotate-45 bg-primary;
     /* rotate: -44deg; */
 }
 

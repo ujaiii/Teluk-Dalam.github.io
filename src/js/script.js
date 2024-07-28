@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     hamburgerButton.addEventListener('click', () => {
         sidebarMenu.classList.toggle('open');
+        
         hamburgerButton.classList.toggle('hamburger-active');
         closeAllDropdowns();
     });
