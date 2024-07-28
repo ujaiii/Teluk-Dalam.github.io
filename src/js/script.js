@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const dropdowns = [
         { buttonId: 'menu-button-beranda', menuId: 'dropdown-menu-beranda' },
@@ -85,32 +84,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-// navbar fixed
-window.onscroll = function() {
+function checkScreen() {
     const header = document.getElementById('navbar-medium');
     const fixedNav = header.offsetTop;
-
-    if (window.pageYOffset > fixedNav){
+    if (window.innerWidth < 768) {
         header.classList.add('navbar-fixed');
     } else {
         header.classList.remove('navbar-fixed');
     }
 }
 
+window.onresize = ('resize', checkScreen);
+
+checkScreen();
+
 // hamburger
 document.addEventListener('DOMContentLoaded', (event) => {
+    const dropdowns = [
+        { buttonId: 'menu-button-beranda-m', menuId: 'dropdown-menu-beranda-m' },
+        { buttonId: 'menu-button-profil-m', menuId: 'dropdown-menu-profil-m' },
+        { buttonId: 'menu-button-transparasi-m', menuId: 'dropdown-menu-transparasi-m' },
+        { buttonId: 'menu-button-pemerintahan-m', menuId: 'dropdown-menu-pemerintahan-m' },
+        { buttonId: 'menu-button-informasi-m', menuId: 'dropdown-menu-informasi-m' },
+        { buttonId: 'menu-button-potensi-m', menuId: 'dropdown-menu-potensi-m' }
+    ];
+    
+    function closeAllDropdowns() {
+        dropdowns.forEach(dropdown => {
+            const menu = document.getElementById(dropdown.menuId);
+            const button = document.getElementById(dropdown.buttonId);
+            menu.classList.add('hidden');
+            if (!hasClass(button, 'active-menu')) {
+                button.classList.add('text-dark');
+                button.classList.remove('text-primary');
+            }
+            button.setAttribute('aria-expanded', 'false');
+        });
+    }
+
     const hamburgerButton = document.getElementById('hamburger');
     const sidebarMenu = document.getElementById('sidebarMenu');
-    const closeButton = document.getElementById('close-btn');
     
     hamburgerButton.addEventListener('click', () => {
         sidebarMenu.classList.toggle('open');
+        hamburgerButton.classList.toggle('hamburger-active');
+        closeAllDropdowns();
     });
-
-    closeButton.addEventListener('click', () => {
-        sidebarMenu.classList.toggle('open');
-    });
-
 });
 

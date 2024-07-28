@@ -12,32 +12,38 @@
 
 <body>
     <!-- nav menu -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
-        <div class="w-full">
-            <!-- Medium Screen -->
-            <div id="navbar-medium" class="container hidden md:flex items-center justify-between flex-row border-b border-gray-300">
-                <div class="px-4">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="w-full md:pl-4">
+            <div id="navbar-medium" class="container w-full items-center justify-between md:flex md:flex-row">
+                <div class="flex flex-row">
+                    <button id="hamburger" name="hamburger" type="button" class="md:hidden block mr-10 space-y-2">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    </button>
                     <a href="index.html" class="inline-flex gap-3 items-center py-6">
                         <img src="src/img/logoKukar.PNG" width="40" alt="Kutai Kartanegara">
                         <div>
-                            <h3 class="font-bold text-2xl text-dark">
+                            <h3 class="font-bold text-xl md:text-2xl text-dark">
                                 Desa Teluk Dalam
                             </h3>
-                            <p class="text-sm font-semibold text-dark">
+                            <p class="text-xs md:text-sm font-semibold text-dark">
                                 Kabupaten Kutai Kartanegara
                             </p>
                         </div>
                     </a>
                 </div>
+
+                <!-- nav medium screen -->
                 <div class="flex items-center px-4 ml-2 md:ml-0">
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full -left-1 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none font-bold">
+                        class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full -left-1 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none font-bold">
                         <ul class="hidden md:flex z-20 space-x-3">
                             <li class="group">
                                 <div class="relative inline-block text-left border-b-2 border-primary">
                                     <a href="/" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-primary active-menu"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-md font-bold text-primary active-menu"
                                             id="menu-button-beranda" aria-expanded="false" aria-haspopup="true">
                                             Beranda
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -74,7 +80,7 @@
                                 <div class="relative inline-block text-left">
                                     <a href="profil.html" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-dark"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-md font-bold text-dark"
                                             id="menu-button-profil" aria-expanded="false" aria-haspopup="true">
                                             Profil
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -115,7 +121,7 @@
                                 <div class="relative inline-block text-left">
                                     <a href="transparasi.html" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-dark hover:text-primary"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-md font-bold text-dark hover:text-primary"
                                             id="menu-button-transparasi" aria-expanded="false" aria-haspopup="true">
                                             Transparasi
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -153,7 +159,7 @@
                                 <div class="relative inline-block text-left">
                                     <a href="pemerintahan.html" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-dark hover:text-primary"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-md font-bold text-dark hover:text-primary"
                                             id="menu-button-pemerintahan" aria-expanded="false" aria-haspopup="true">
                                             Pemerintahan
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -186,7 +192,7 @@
                                 <div class="relative inline-block text-left">
                                     <a href="informasi.html" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-dark hover:text-primary"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-md font-bold text-dark hover:text-primary"
                                             id="menu-button-informasi" aria-expanded="false" aria-haspopup="true">
                                             Informasi Publik
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -224,7 +230,7 @@
                                 <div class="relative inline-block text-left">
                                     <a href="potensi.html" class="">
                                         <button type="button"
-                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-bold text-dark hover:text-primary"
+                                            class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-md font-bold text-dark hover:text-primary"
                                             id="menu-button-potensi" aria-expanded="false" aria-haspopup="true">
                                             Potensi Desa
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
@@ -252,47 +258,10 @@
                 </div>
             </div>
 
-            <!-- Small Screen -->
-            <div class="md:hidden flex items-center space-x-16 border-b border-gray-300">
-                <button id="hamburger" name="hamburger" type="button" class="md:hidden block absolute left-4">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-                <div class="px-4">
-                    <a href="/" class="inline-flex gap-3 items-center py-6">
-                        <img src="src/img/logoKukar.PNG" width="40" alt="Kutai Kartanegara">
-                        <div class="mx-auto">
-                            <h3 class="font-bold text-2xl text-dark">
-                                Desa Teluk Dalam
-                            </h3>
-                            <p class="text-sm font-semibold text-dark">
-                                Kabupaten Kutai Kartanegara
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
             <!-- nav small screen -->
             <div id="sidebarMenu"
-                class="md:hidden fixed inset-y-0 left-0 z-30 w-72 shadow-lg transform -translate-x-full transition-transform duration-300">
+                class="md:hidden fixed inset-y-0 top-[98px] left-0 z-30 w-56 shadow-lg transform -translate-x-full transition-transform duration-300">
                 <div class="">
-                    <div class="h-[100.5px] mb-5 flex items-center border-b bg-primary text-white border-gray-300 p-4 justify-between">
-                        <div class="flex space-x-3 items-center">
-                            <img src="src/img/logoKukar.PNG" width="40px" alt="">
-                            <h3 class="font-bold text-xl">
-                                Desa <br>Teluk Dalam
-                            </h3>
-                        </div>
-                        <button id="close-btn" name="close-btn" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 hover:text-dark" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    
                     <ul class="z-20 space-y-3 mx-3">
                         <li class="group">
                             <div class="relative w-full inline-block text-left border-b-2 border-primary">
@@ -308,7 +277,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-beranda-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 -0 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
@@ -343,7 +312,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-profil-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
@@ -382,7 +351,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-transparasi-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
@@ -418,7 +387,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-pemerintahan-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
@@ -449,7 +418,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-informasi-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-primary rounded-t-md" role="none">
@@ -485,7 +454,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-menu-potensi-m"
-                                    class="absolute top-8 left-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
+                                    class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                     tabindex="-1">
                                     <div class="py-1 hover:bg-secondary rounded-md text-light hover:text-white"
@@ -499,6 +468,7 @@
                     </ul>
                 </div>
             </div>
+            
         </div>
     </header>
 
