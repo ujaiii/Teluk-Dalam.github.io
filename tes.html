@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-hidden">
+
+<div class="relative w-full h-screen overflow-hidden">
+    <div class="slider w-full h-full flex transition-transform duration-500">
+        <div class="slide flex-shrink-0 w-full h-full">
+            <img src="https://via.placeholder.com/1920x1080.png?text=Slide+1" class="w-full h-full object-cover" alt="Slide 1">
+        </div>
+        <div class="slide flex-shrink-0 w-full h-full">
+            <img src="https://via.placeholder.com/1920x1080.png?text=Slide+2" class="w-full h-full object-cover" alt="Slide 2">
+        </div>
+        <div class="slide flex-shrink-0 w-full h-full">
+            <img src="https://via.placeholder.com/1920x1080.png?text=Slide+3" class="w-full h-full object-cover" alt="Slide 3">
+        </div>
+    </div>
+    <button class="prev-button absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+        Prev
+    </button>
+    <button class="next-button absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+        Next
+    </button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        let currentIndex = 0;
+
+        const showSlide = (index) => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        };
+
+        const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        };
+
+        const prevSlide = () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        };
+
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        let startX;
+        const handleTouchStart = (e) => {
+            startX = e.touches[0].clientX;
+        };
+
+        const handleTouchMove = (e) => {
+            if (!startX) return;
+            const endX = e.touches[0].clientX;
+            const diff = startX - endX;
+
+            if (diff > 50) {
+                nextSlide();
+                startX = null;
+            } else if (diff < -50) {
+                prevSlide();
+                startX = null;
+            }
+        };
+
+        slider.addEventListener('touchstart', handleTouchStart);
+        slider.addEventListener('touchmove', handleTouchMove);
+    });
+</script>
+
+</body>
+</html>

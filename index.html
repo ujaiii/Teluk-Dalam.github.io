@@ -12,7 +12,7 @@
 
 <body>
     <!-- nav menu -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-transparent w-full flex items-center  border-b border-gray-300">
         <div class="w-full md:pl-4">
             <div id="navbar-medium" class="container w-full items-center justify-between md:flex md:flex-row">
                 <div class="flex flex-row">
@@ -24,7 +24,7 @@
                     <a href="index.html" class="inline-flex gap-3 items-center py-6">
                         <img src="src/img/logoKukar.PNG" width="40" alt="Kutai Kartanegara">
                         <div>
-                            <h3 class="font-bold text-xl md:text-2xl text-dark">
+                            <h3 class="font-bold text-xl md:text-xl text-dark">
                                 Desa Teluk Dalam
                             </h3>
                             <p class="text-xs md:text-sm font-semibold text-dark">
@@ -473,8 +473,42 @@
     </header>
 
     <!-- hero -->
-    <section class="min-h-screen">
+    <section class="min-h-screen pt-24 md:pt-0">
+        <div class="overflow-hidden">
+            <div class="relative w-full md:h-[30rem] overflow-hidden">
+                <div class="slider w-full h-full flex transition-transform duration-500">
+                    <div class="slide flex-shrink-0 w-full h-full relative">
+                        <img src="src/img/slide1.jpg" class="w-full h-full object-cover" alt="Desa Teluk Dalam Muara Jawa">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                    </div>
+                    <div class="slide flex-shrink-0 w-full h-full relative">
+                        <img src="src/img/slide2.jpg" class="w-full h-full object-cover" alt="Pemandangan Desa Teluk Dalam">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                    </div>
+                    <div class="slide flex-shrink-0 w-full h-full relative">
+                        <img src="src/img/slide3.jpg" class="w-full h-full object-cover" alt="Pemandangan Desa Teluk Dalam">
+                        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                    </div>
+                </div>
+                <button class="prev-button absolute top-1/2 left-4 transform -translate-y-1/2 bg-white hover:bg-gray-300 text-dark p-2 rounded-full z-10">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button class="next-button absolute top-1/2 right-4 transform -translate-y-1/2 bg-white hover:bg-gray-300 text-dark p-2 rounded-full z-10">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- berita & agenda tahunan -->
+    <section class="py-16">
+        <div class="container">
+
+        </div>
     </section>
 
     <!-- footer -->
@@ -582,6 +616,7 @@
     </footer>
 
     <script src="src\js\script.js"></script>
+    <script src="src\js\slider.js"></script>
 </body>
 
 </html>
