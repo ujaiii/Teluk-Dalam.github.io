@@ -84,6 +84,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+window.onscroll = function() {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+
+    if (window.pageYOffset > fixedNav){
+        header.classList.add('navbar-fixed');
+    } else {
+        header.classList.remove('navbar-fixed');
+    }
+}
+
 function checkScreen() {
     const header = document.getElementById('navbar-medium');
     const fixedNav = header.offsetTop;
@@ -94,9 +105,9 @@ function checkScreen() {
     }
 }
 
-window.onresize = ('resize', checkScreen);
+// window.onresize = ('resize', checkScreen);
 
-checkScreen();
+// checkScreen();
 
 // hamburger
 document.addEventListener('DOMContentLoaded', (event) => {
