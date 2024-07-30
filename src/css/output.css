@@ -719,6 +719,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -829,6 +833,82 @@ video {
   width: 100%;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[15px\] {
+  width: 15px;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[10\] {
+  width: 10;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[95\%\] {
+  width: 95%;
+}
+
+.w-\[3\%\] {
+  width: 3%;
+}
+
+.w-\[97\%\] {
+  width: 97%;
+}
+
+.w-\[2\%\] {
+  width: 2%;
+}
+
+.w-\[98\%\] {
+  width: 98%;
+}
+
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[1\%\] {
+  width: 1%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
 .max-w-\[250px\] {
   max-width: 250px;
 }
@@ -863,6 +943,10 @@ video {
   cursor: pointer;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
@@ -877,6 +961,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -976,6 +1064,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1079,6 +1179,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -1098,6 +1203,14 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-3 {
