@@ -3,22 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind CSS List Example</title>
+  <title>Dropdown Example</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .dropdown-content {
+      transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    .dropdown-active {
+      max-height: 500px; /* Adjust based on the content height */
+      opacity: 1;
+    }
+  </style>
 </head>
-<body>
-  <div class="container mx-auto mt-5">
-    <ol class="list-decimal list-inside">
-      <li class="flex items-start gap-2">
-        <span class="font-bold">a.</span>
-        <span>asd</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="font-bold">b.</span>
-        <span>fgh</span>
-      </li>
-      <!-- Add more list items here -->
-    </ol>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+    <div class="px-6 py-4">
+      <button id="dropdownButton" class="bg-blue-500 text-white px-4 py-2 rounded-md w-full text-left focus:outline-none">
+        Kepala Desa
+      </button>
+      <div id="dropdownContent" class="dropdown-content mt-4 px-4 py-2 bg-gray-100 rounded-md">
+        <p class="text-gray-700">
+          Ini adalah konten yang disembunyikan. Anda dapat menambahkan lebih banyak informasi di sini sesuai kebutuhan Anda.
+        </p>
+        <p class="text-gray-700 mt-2">
+          Konten ini akan muncul saat tombol Kepala Desa diklik dan akan disembunyikan lagi jika tombol tersebut diklik kembali.
+        </p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+      var content = document.getElementById('dropdownContent');
+      if (content.classList.contains('dropdown-active')) {
+        content.classList.remove('dropdown-active');
+      } else {
+        content.classList.add('dropdown-active');
+      }
+    });
+  </script>
 </body>
 </html>
