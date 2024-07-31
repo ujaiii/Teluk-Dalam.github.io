@@ -95,20 +95,6 @@ window.onscroll = function() {
     }
 }
 
-function checkScreen() {
-    const header = document.getElementById('navbar-medium');
-    const fixedNav = header.offsetTop;
-    if (window.innerWidth < 768) {
-        header.classList.add('navbar-fixed');
-    } else {
-        header.classList.remove('navbar-fixed');
-    }
-}
-
-// window.onresize = ('resize', checkScreen);
-
-// checkScreen();
-
 // hamburger
 document.addEventListener('DOMContentLoaded', (event) => {
     const dropdowns = [
@@ -144,3 +130,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const btnFooter = document.getElementById('profilFooter');
+    const textFooter = document.getElementById('textFooter');
+
+    btnFooter.addEventListener('click', () => {
+        if (textFooter.classList.contains('line-clamp-4')){
+            textFooter.classList.remove('line-clamp-4');
+            btnFooter.textContent = 'Lebih Sedikit';
+        } else {
+            textFooter.classList.add('line-clamp-4');
+            btnFooter.textContent = 'Selengkapnya';
+        }
+    });
+});
