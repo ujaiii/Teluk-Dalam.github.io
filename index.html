@@ -235,7 +235,7 @@
                                         <button type="button"
                                             class="inline-flex items-center w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-md font-semibold text-dark hover:text-primary"
                                             id="menu-button-potensi" aria-expanded="false" aria-haspopup="true">
-                                            Potensi Desa
+                                            Potensi & Inovasi
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
                                                 aria-hidden="true">
                                                 <path fill-rule="evenodd"
@@ -248,10 +248,15 @@
                                         class="absolute top-8 right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                         tabindex="-1">
-                                        <div class="py-1 hover:bg-secondary rounded-md text-light hover:text-white"
+                                        <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
                                             role="none">
                                             <a href="potensi.html#potensi" class="block px-4 font-medium py-2 text-sm"
                                                 role="menuitem" tabindex="-1" id="menu-item-0">Potensi Desa</a>
+                                        </div>
+                                        <div class="py-1 hover:bg-secondary rounded-b-md text-light hover:text-white"
+                                            role="none">
+                                            <a href="potensi.html#inovasi" class="block px-4 font-medium py-2 text-sm"
+                                                role="menuitem" tabindex="-1" id="menu-item-0">Inovasi Desa</a>
                                         </div>
                                     </div>
                                 </div>
@@ -259,9 +264,7 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-
-            
+            </div>            
         </div>
     </header>
     
@@ -448,7 +451,7 @@
                         <button type="button"
                             class="inline-flex items-center w-full justify-between rounded-md bg-white px-3 py-2 text-md font-semibold text-dark hover:text-primary"
                             id="menu-button-potensi-m" aria-expanded="false" aria-haspopup="true">
-                            Potensi Desa
+                            Potensi & Inovasi
                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
                                 aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -459,10 +462,15 @@
                         <div id="dropdown-menu-potensi-m"
                             class="absolute top-0 left-full w-40 z-10 mt-2 origin-top-right divide-y divide-light rounded-md bg-white shadow-lg ring-1 ring-dark ring-opacity-5 focus:outline-none hidden"
                             role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                            <div class="py-1 hover:bg-secondary rounded-md text-light hover:text-white"
+                            <div class="py-1 hover:bg-secondary rounded-t-md text-light hover:text-white"
                                 role="none">
                                 <a href="potensi.html#potensi" class="block px-4 font-medium py-2 text-sm"
                                     role="menuitem" tabindex="-1" id="menu-item-0">Potensi Desa</a>
+                            </div>
+                            <div class="py-1 hover:bg-secondary rounded-b-md text-light hover:text-white"
+                                role="none">
+                                <a href="potensi.html#inovasi" class="block px-4 font-medium py-2 text-sm"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">Inovasi Desa</a>
                             </div>
                         </div>
                     </div>
@@ -481,13 +489,13 @@
                         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white text-center select-none animate__animated animate__fadeInUp">
                             <div class="py-[62px] md:py-[120px] space-y-5 uppercase">
-                                <h1 class="text-4xl md:text-7xl font-bold">
+                                <h1 class="text-3xl md:text-7xl font-bold">
                                     Selamat Datang
                                 </h1>
-                                <h1 class="text-4xl md:text-7xl font-bold">
+                                <h1 class="text-3xl md:text-7xl font-bold">
                                     Di Website
                                 </h1>
-                                <h1 class="text-4xl md:text-7xl font-bold">
+                                <h1 class="text-3xl md:text-7xl font-bold">
                                     Desa Teluk Dalam
                                 </h1>
                             </div>
@@ -522,7 +530,7 @@
 
     <!-- berita & agenda -->
     <section class="pt-16 pb-24 md:py-24 items-center">
-        <div class="container">
+        <div class="container md:px-8">
             <div class="flex md:flex-row flex-col space-y-10 md:space-y-0 md:space-x-10">
                 <div id="berita" class="md:w-2/3 space-y-5">
                     <div class="flex w-full items-center gap-3 text-primary font-semibold text-2xl border-b-2 border-primary">
@@ -533,8 +541,8 @@
                             <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM5 19V5h14v14H5zm8-13h5v2h-5V6zm-7 0h5v6H6V6zm7 4h5v2h-5v-2zm0 4h5v2h-5v-2zM6 14h5v2H6v-2z"/>
                         </svg>
                     </div>
+                    <!-- items berita -->
                     <div class="items-center space-y-5">
-                        <!-- item berita -->
                         <div class="flex md:flex-row flex-col gap-1 md:gap-5">
                             <div class="relative md:w-1/3 overflow-hidden group hover:shadow-lg cursor-pointer">
                                 <img src="src/img/slide1.jpg" class="w-full h-40 text-center transform transition-transform duration-300 ease-in group-hover:scale-105" alt="">
@@ -549,12 +557,12 @@
                                 <p class="text-light font-medium text-sm text-justify line-clamp-4 md:mb-2">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, incidunt quas eligendi dolorem quo nam necessitatibus sunt, obcaecati pariatur sint in eos quisquam soluta mollitia libero laborum sit totam quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nemo ab iusto. Voluptatem, beatae rerum. Vitae ab ipsum veritatis, molestiae aperiam expedita praesentium assumenda, placeat id earum aliquam error enim!
                                 </p>
-                                <a href="#" class="text-primary hover:text-secondary text-lg font-semibold">
-                                    Selengkapnya &raquo;
+                                <a href="#" class="text-primary hover:text-white hover:bg-primary pl-1 pr-3 py-[6px] rounded-r-full text-md font-semibold items-center">
+                                    Selengkapnya <span class="text-2xl">&raquo;</span>
                                 </a>
                             </div>
                         </div>
-                        <!-- item berita -->
+                        
                         <div class="flex md:flex-row flex-col gap-1 md:gap-5">
                             <div class="relative md:w-1/3 overflow-hidden group hover:shadow-lg cursor-pointer">
                                 <img src="src/img/slide2.jpg" class="w-full h-40 text-center transform transition-transform duration-300 ease-in group-hover:scale-105" alt="">
@@ -569,12 +577,12 @@
                                 <p class="text-light font-medium text-sm text-justify line-clamp-4 md:mb-2">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, incidunt quas eligendi dolorem quo nam necessitatibus sunt, obcaecati pariatur sint in eos quisquam soluta mollitia libero laborum sit totam quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nemo ab iusto. Voluptatem, beatae rerum. Vitae ab ipsum veritatis, molestiae aperiam expedita praesentium assumenda, placeat id earum aliquam error enim!
                                 </p>
-                                <a href="#" class="text-primary hover:text-secondary text-lg font-semibold">
-                                    Selengkapnya &raquo;
+                                <a href="#" class="text-primary hover:text-white hover:bg-primary pl-1 pr-3 py-[6px] rounded-r-full text-md font-semibold items-center">
+                                    Selengkapnya <span class="text-2xl">&raquo;</span>
                                 </a>
                             </div>
                         </div>
-                        <!-- item berita -->
+                        
                         <div class="flex md:flex-row flex-col gap-1 md:gap-5">
                             <div class="relative md:w-1/3 overflow-hidden group hover:shadow-lg cursor-pointer">
                                 <img src="src/img/slide3.jpg" class="w-full h-40 text-center transform transition-transform duration-300 ease-in group-hover:scale-105" alt="">
@@ -589,8 +597,8 @@
                                 <p class="text-light font-medium text-sm text-justify line-clamp-4 md:mb-2">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, incidunt quas eligendi dolorem quo nam necessitatibus sunt, obcaecati pariatur sint in eos quisquam soluta mollitia libero laborum sit totam quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nemo ab iusto. Voluptatem, beatae rerum. Vitae ab ipsum veritatis, molestiae aperiam expedita praesentium assumenda, placeat id earum aliquam error enim!
                                 </p>
-                                <a href="#" class="text-primary hover:text-secondary text-lg font-semibold">
-                                    Selengkapnya &raquo;
+                                <a href="#" class="text-primary hover:text-white hover:bg-primary pl-1 pr-3 py-[6px] rounded-r-full text-md font-semibold items-center">
+                                    Selengkapnya <span class="text-2xl">&raquo;</span>
                                 </a>
                             </div>
                         </div>
@@ -695,7 +703,7 @@
 
     <!-- lokasi -->
     <section id="lokasi" class="pt-16 pb-24 md:py-24 items-center bg-gray-100">
-        <div class="container space-y-8">
+        <div class="container md:px-8 space-y-8">
             <div class="mx-auto text-center">
                 <h3 class="text-2xl font-bold text-primary mb-1 md:mb-3 uppercase">
                     LOKASI DESA
@@ -775,10 +783,10 @@
 
     <!-- footer -->
     <footer class="pt-16 pb-8 bg-sky-600 text-white">
-        <div class="container">
+        <div class="container md:px-8">
             <div class="flex flex-col md:flex-row md:justify-between md:space-x-10 gap-5 mb-8 md:mb-10">
                 <div class="md:w-2/5 mb-5">
-                    <h1 class="text-2xl md:text-2xl font-bold underline underline-offset-8 mb-3">
+                    <h1 class="text-2xl font-bold underline underline-offset-8 mb-3">
                         Desa Teluk Dalam
                     </h1>
                     <p class="text-md">
@@ -794,7 +802,7 @@
                     </button>
                 </div>
                 <div class="md:w-1/5 space-y-3">
-                    <h1 class="text-xl md:text-2xl font-bold underline underline-offset-4">
+                    <h1 class="text-2xl font-bold underline underline-offset-4">
                         Tautan
                     </h1>
                     <ul class="text-medium space-y-1">
@@ -819,7 +827,7 @@
                     </ul>
                 </div>
                 <div class="md:w-2/5">
-                    <h1 class="text-2xl md:text-2xl font-bold underline underline-offset-8 mb-3">
+                    <h1 class="text-2xl font-bold underline underline-offset-8 mb-3">
                         Kontak Kami
                     </h1>
                     <div class="flex flex-col gap-2 mb-3">
