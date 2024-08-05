@@ -1,5 +1,29 @@
 {
   "rewrites": [
-    { "source": "/:path", "destination": "/:path.html" }
-  ]
+    { "source": "/(.*)", "destination": "/$1.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/old-path", "destination": "/new-path", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "your-database-url",
+    "API_KEY": "your-api-key"
+  },
+  "functions": {
+    "api/index.js": {
+      "memory": 128,
+      "maxDuration": 5
+    }
+  }
 }
