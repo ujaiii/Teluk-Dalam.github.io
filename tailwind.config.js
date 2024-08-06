@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html', 'profil.html', 'transparasi.html', 'pemerintahan.html', 'informasi.html', 'potensi.html'],
+  content: ['index.html', 'profil.html', 'transparasi.html', 'pemerintahan.html', 'informasi.html', 'potensi.html', 'berita.html', 'agenda.html'],
   theme: {
     container: {
       center: true,
