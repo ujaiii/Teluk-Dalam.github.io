@@ -1,5 +1,5 @@
 # How to get this code?
-*the command below with your terminal*
+*follow the command below with your terminal*
 
 - Clone project
 
