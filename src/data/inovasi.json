@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "judul": "Inovasi Pertama",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide1.jpg",
+        "tanggal": "30 Juli 2024",
+        "jenis": "Inovasi Bisnis"
+    },
+    {
+        "id": 2,
+        "judul": "Inovasi Kedua",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide2.jpg",
+        "tanggal": "31 Juli 2024",
+        "jenis": "Inovasi Perkebunan"
+    },
+    {
+        "id": 3,
+        "judul": "Inovasi Ketiga",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide3.jpg",
+        "tanggal": "1 Agust 2024",
+        "jenis": "Inovasi Peternakan"
+    },
+    {
+        "id": 4,
+        "judul": "Inovasi Keempat",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide1.jpg",
+        "tanggal": "30 Juli 2024",
+        "jenis": "Inovasi Perikanan"
+    },
+    {
+        "id": 5,
+        "judul": "Inovasi Kelima",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide2.jpg",
+        "tanggal": "31 Juli 2024",
+        "jenis": "Inovasi Perdagangan"
+    },
+    {
+        "id": 6,
+        "judul": "Inovasi Keenam",
+        "isi": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis error provident mollitia eum impedit saepe ea adipisci, nemo necessitatibus. Nobis deleniti, exercitationem magni cupiditate illo facilis facere accusantium sapiente quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nisi iusto quaerat tempore dolores reprehenderit necessitatibus, modi repudiandae dolorem cum illo, blanditiis impedit fugit quidem voluptas vitae ea. Reiciendis, dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error voluptas sapiente consequuntur soluta, vero vitae libero possimus ipsa dolorum cumque molestiae excepturi rem odit repellat temporibus? Vero, velit facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum recusandae amet quae dicta, doloremque dolore perferendis consectetur tenetur in modi pariatur explicabo aut facilis eum molestiae ipsam cumque omnis!",
+        "gambar": "src/img/slide3.jpg",
+        "tanggal": "1 Agust 2024",
+        "jenis": "Inovasi Pertambangan"
+    }
+]
